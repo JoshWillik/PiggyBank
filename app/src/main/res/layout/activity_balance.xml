@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/fund_change_input"
             android:gravity="center_horizontal"/>
 
         <LinearLayout
@@ -44,7 +44,8 @@
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:background="@color/danger"
                 android:text="@string/withdraw"
-                android:id="@+id/withdraw" />
+                android:id="@+id/withdraw"
+                android:onClick="makeWithdrawal"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -52,7 +53,8 @@
                 android:layout_weight="1"
                 android:background="@color/success"
                 android:text="@string/deposit"
-                android:id="@+id/deposit" />
+                android:id="@+id/deposit"
+                android:onClick="makeDeposit"/>
 
         </LinearLayout>
     </LinearLayout>
